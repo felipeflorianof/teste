@@ -6,41 +6,46 @@
     <title>Contato WhatsApp</title>
     <style>
         body {
+            background-image: url('backblue2.png');
+            background-position: -350px top;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
             display: flex;
-            flex-direction: column; /* Para empilhar elementos verticalmente */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: white; /* Cor base branca */
+            background-color: white;
             overflow: hidden;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            position: relative; /* Para posicionar a imagem de fundo */
+            position: relative;
         }
         .header {
-            color: #ffffff; /* Cor do texto */
-            font-size: 24px; /* Tamanho da fonte */
-            margin-bottom: 20px; /* Espaço entre o texto e o contêiner */
+            color: #000000;
+            font-size: 24px;
+            margin-bottom: 20px;
             text-align: center;
-            position: relative; /* Para garantir que fique acima da imagem */
+            position: relative; 
         }
         .container {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 1px 1px 10px black;
+            box-shadow: 1px 1px 5px black;
             text-align: center;
             cursor: pointer;
             transition: box-shadow 0.3s ease;
-            margin-bottom: 20px; /* Espaço entre os contêineres */
-            position: relative; /* Para garantir que fiquem acima da imagem */
-            z-index: 1; /* Colocar acima da imagem de fundo */
-            width: 300px; /* Largura fixa */
-            height: 100px; /* Altura fixa */
-            display: flex; /* Para centralizar o conteúdo */
-            flex-direction: column; /* Para empilhar o conteúdo verticalmente */
-            justify-content: center; /* Centraliza verticalmente */
-            align-items: center; /* Centraliza horizontalmente */
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            width: 300px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .icon {
             width: 50px;
@@ -56,24 +61,15 @@
             margin-top: 10px;
         }
         .google-forms-link {
-            color: #4285F4; /* Cor do link do Google Forms */
+            color: #4285F4;
         }
         svg {
             width: 50px;
         }
-        .background-image {
-            position: fixed; /* Fixa a imagem na tela */
-            right: 0; /* Coloca a imagem à direita */
-            top: 0; /* Alinha a imagem ao topo */
-            width: auto; /* Largura auto para manter proporção */
-            height: 100vh; /* Altura total da tela */
-            z-index: 0; /* Coloca a imagem atrás de outros elementos */
-        }
     </style>
 </head>
 <body>
-    <img class="background-image" src="backblue2.png" alt="Imagem de fundo">
-    <div class="header">Entre em contato comigo</div>
+    <div class="header">Entre em contato abaixo:</div>
     
     <div class="container" id="whatsapp-container" onclick="redirectToWhatsApp()">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="icon">
