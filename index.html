@@ -19,6 +19,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
         }
         .whatsapp-icon {
             width: 50px;
@@ -33,12 +35,27 @@
             justify-content: center;
             margin-top: 10px;
         }
+        .highlight {
+            box-shadow: 0 0 0 4px #25D366; /* Efeito de luizinha verde */
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="whatsapp-container" onclick="redirectToWhatsApp()">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
-        <a href="https://wa.me/5599999999999?text=Oi,%20tudo%20bem:">9 9386-1630</a>
+        <a href="#" id="whatsapp-link">9 9386-1630</a>
     </div>
+
+    <script>
+        function redirectToWhatsApp() {
+            const container = document.getElementById('whatsapp-container');
+            container.classList.add('highlight'); // Adiciona a classe de destaque
+
+            // Redireciona após um pequeno atraso
+            setTimeout(() => {
+                window.location.href = "https://wa.me/558193861630?text=Oi,%20tudo%20bem:";
+            }, 200); // Espera 200ms antes de redirecionar
+        }
+    </script>
 </body>
 </html>
